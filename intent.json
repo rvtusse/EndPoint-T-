@@ -1,0 +1,70 @@
+{
+    
+    "intent" : [
+ 
+            {
+                "action":"Airtime",
+                "sub_menu":["R10", "R30"]
+            },
+            {
+                "action":"Data",
+                "sub_menu":[ {"menuItem":"RushHour" , "callbackData" :"dataRushHourR2"},
+                    {"menuItem": "RushHour", "callbackData" : "dataRushHourR5"},
+                    {"menuItem":"RushHour", "callbackData": "dataRushHourR12"},
+                    {"menuItem": "RushHour", "callbackData": "dataRushHourR30"},
+                    {"menuItem": "Daily", "callbackData" : "dailyR2"} ,
+                    {"menuItem": "Daily", "callbackData" : "dailyR5"}, 
+                    {"menuItem": "Daily", "callbackData" : "dailyR12"},
+                    {"menuItem": "Daily", "callbackData" : "dailyR30"},
+
+
+                    {"menuItem" : "Weekly", "callbackData" : "weeklyR5"},
+                    {"menuItem" : "Weekly", "callbackData" : "weeklyR10"},
+                    {"menuItem" : "Weekly", "callbackData" : "weeklyR15"},
+                    {"menuItem" : "Weekly", "callbackData" : "weeklyR30"},
+                    
+                    {"menuItem": "Monthly", "callbackData"  : "monthlyR10"},
+                    {"menuItem" : "Monthly", "callbackData" : "MonthlyR20"},
+                    {"menuItem" : "Monthly", "callbackData" : "MonthlyR50"},
+                    {"menuItem" : "Monthly", "callbackData" : "MonthlyR150"}],
+
+
+
+                "RushHour":["1hour 15MB(R2)", "1Hour 50mb(R5)" , "1Hour 150MB(R12)", "1Hour 1GB(R30)"],
+                "Daily":["5MB(R2)", "10mb(R5)" , "20MB(R12)", "500mb(R30)"],
+                "Weekly":["15MB(R5)", "50mb(R10)" , "150MB(R15)", "250(R30)"],
+                "Monthly":["150MB(R10)", "250mb(R20)" , "500MB(R50)", "1GB(R150)"]
+            },
+                
+            {
+                "action":"Social Bundles",
+                "sub_menu":[ { "menuItem":"Youtube","callbackData" : "socialBundlesYoutubeR5"},
+                    {"menuItem": "Youtube", "callbackData" : "socialBundlesYoutubeR25"},
+                    {"menuItem": "Youtube", "callbackData" : "socialBundlesYoutubeR30"},
+
+                    {"menuItem": "WhatsApp", "callbackData" : "socialBundlesWhatsappR5"},
+                    {"menuItem": "WhatsApp", "callbackData" : "socialBundlesWhatsappR25"},
+                    {"menuItem": "WhatsApp", "callbackData" : "socialBundlesWhatsappR30"},
+
+                    {"menuItem": "Twitter", "callbackData" : "socialBundlesTwitterR5"},
+                    {"menuItem": "Twitter", "callbackData" : "socialBundlesTwitterR25"},
+                    {"menuItem": "Twitter", "callbackData" : "socialBundlesTwitterR30"},
+
+                    {"menuItem": "Facebook", "callbackData" : "socialBundlesFacebookR5"},
+                    {"menuItem": "Facebook", "callbackData" : "socialBundlesFacebookR25"},
+                    {"menuItem": "Facebook", "callbackData" : "socialBundlesFacebookR30"}],
+
+                    "Youtube":["1day 100MB(R5)","7day 500MB(R25)","30day 1GB(R30)"],
+                    "WhatsApp":["1day 100MB(R5)","7day 500MB(R25)","30day 1GB(R30)"],
+                    "Twitter":["1day 100MB(R5)","7day 500MB(R25)","30day 1GB(R30)"],
+                    "Facebook":["1day 100MB(R5)","7day 500MB(R25)","30day 1GB(R30)"]
+            }
+ ,
+            {
+                "action":"Call center",
+                "sub_menu":["Puk number", "Internet Settings"]
+            }
+ 
+    ]
+
+ }
